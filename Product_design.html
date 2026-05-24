@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Project Prompt&colon; Windows-First Local Privacy Debt Auditor</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="project-prompt-windows-first-local-privacy-debt-auditor">Project Prompt: Windows-First Local Privacy Debt Auditor</h1>
+<p>You are designing and engineering a next-generation cybersecurity and privacy analysis platform called:</p>
+<h1 id="privacy-debt-auditor">“Privacy Debt Auditor”</h1>
+<p>A high-performance, Windows-first, local-only forensic privacy auditor that identifies, maps, visualizes, and explains sensitive personal data exposure and tracking residue stored across a user’s machine.</p>
+<p>The application must operate entirely offline.</p>
+<p>No cloud processing.
+No telemetry.
+No analytics.
+No external APIs.
+No remote logging.
+No account systems.</p>
+<p>The audit itself must never become a privacy leak.</p>
+<p>The project should feel like:</p>
+<ul>
+<li>a forensic observability platform</li>
+<li>a privacy archaeology engine</li>
+<li>an OSINT investigation against your own computer</li>
+<li>a behavioral residue mapper</li>
+</ul>
+<p>The product philosophy should communicate:</p>
+<blockquote>
+<p>“Your machine remembers more about you than you realize.”</p>
+</blockquote>
+<hr>
+<h1 id="primary-goal">PRIMARY GOAL</h1>
+<p>Build a visually sophisticated desktop application capable of:</p>
+<ul>
+<li>scanning Windows filesystems</li>
+<li>analyzing browser artifacts</li>
+<li>inspecting application databases</li>
+<li>detecting secrets and privacy leaks</li>
+<li>reconstructing behavioral timelines</li>
+<li>visualizing privacy exposure</li>
+<li>generating actionable remediation guidance</li>
+</ul>
+<p>The project should be hackathon-grade:</p>
+<ul>
+<li>visually memorable</li>
+<li>emotionally impactful</li>
+<li>technically impressive</li>
+<li>demo-friendly</li>
+<li>realistically useful</li>
+</ul>
+<hr>
+<h1 id="target-platform">TARGET PLATFORM</h1>
+<p>Primary Platform:</p>
+<ul>
+<li>Windows 10/11</li>
+</ul>
+<p>Development Environment:</p>
+<ul>
+<li>WSL acceptable</li>
+<li>Native Windows support required</li>
+</ul>
+<p>Future Support:</p>
+<ul>
+<li>Linux</li>
+<li>macOS</li>
+</ul>
+<hr>
+<h1 id="core-product-principles">CORE PRODUCT PRINCIPLES</h1>
+<h1 id="1-local-first-architecture">1. Local-First Architecture</h1>
+<p>All analysis must happen locally.</p>
+<p>No internet communication allowed.</p>
+<hr>
+<h1 id="2-transparency">2. Transparency</h1>
+<p>Users must understand:</p>
+<ul>
+<li>what data exists</li>
+<li>where it exists</li>
+<li>why it exists</li>
+<li>which application created it</li>
+<li>why it matters</li>
+</ul>
+<hr>
+<h1 id="3-human-centered-cybersecurity">3. Human-Centered Cybersecurity</h1>
+<p>Translate invisible privacy exposure into understandable visual insights.</p>
+<p>The experience should feel investigative, cinematic, and eye-opening.</p>
+<hr>
+<h1 id="4-forensic-authenticity">4. Forensic Authenticity</h1>
+<p>Use real system artifacts and realistic privacy findings.</p>
+<p>Avoid fake “Hollywood hacker” aesthetics.</p>
+<hr>
+<h1 id="recommended-tech-stack">RECOMMENDED TECH STACK</h1>
+<h2 id="backend">Backend</h2>
+<p>Rust</p>
+<p>Reason:</p>
+<ul>
+<li>performance</li>
+<li>memory safety</li>
+<li>concurrency</li>
+<li>filesystem efficiency</li>
+<li>WinAPI compatibility</li>
+</ul>
+<hr>
+<h2 id="desktop-application">Desktop Application</h2>
+<p>Tauri + React</p>
+<hr>
+<h2 id="visualization">Visualization</h2>
+<p>D3.js or Cytoscape.js</p>
+<hr>
+<h2 id="database-layer">Database Layer</h2>
+<p>SQLite</p>
+<hr>
+<h2 id="async-runtime">Async Runtime</h2>
+<p>Tokio</p>
+<hr>
+<h2 id="ocr">OCR</h2>
+<p>Tesseract OCR</p>
+<hr>
+<h2 id="windows-apis">Windows APIs</h2>
+<p>Rust windows-rs crate</p>
+<p>Use for:</p>
+<ul>
+<li>registry access</li>
+<li>filesystem metadata</li>
+<li>Windows-specific artifacts</li>
+</ul>
+<hr>
+<h1 id="core-features">CORE FEATURES</h1>
+<h1 id="1-privacy-debt-score">1. Privacy Debt Score™</h1>
+<p>Generate a global privacy exposure score.</p>
+<p>Example:
+Privacy Debt Score: 78/100</p>
+<p>Factors include:</p>
+<ul>
+<li>exposed secrets</li>
+<li>tracking cookies</li>
+<li>cached identifiers</li>
+<li>browser persistence</li>
+<li>metadata leakage</li>
+<li>retained deleted artifacts</li>
+<li>stale sessions</li>
+<li>risky storage locations</li>
+</ul>
+<p>The score should update dynamically during scans.</p>
+<hr>
+<h1 id="2-filesystem-scanner">2. Filesystem Scanner</h1>
+<p>Recursive filesystem analysis engine.</p>
+<p>Scan:</p>
+<ul>
+<li>Downloads</li>
+<li>Desktop</li>
+<li>Documents</li>
+<li>browser storage</li>
+<li>temp directories</li>
+<li>app data folders</li>
+</ul>
+<p>Detect:</p>
+<ul>
+<li>API keys</li>
+<li>passwords</li>
+<li>.env files</li>
+<li>private keys</li>
+<li>wallet seed phrases</li>
+<li>sensitive PDFs</li>
+<li>identity documents</li>
+<li>screenshots containing text</li>
+</ul>
+<p>Capabilities:</p>
+<ul>
+<li>concurrent scanning</li>
+<li>path exclusions</li>
+<li>entropy analysis</li>
+<li>file type detection</li>
+<li>MIME analysis</li>
+</ul>
+<hr>
+<h1 id="3-browser-privacy-analysis">3. Browser Privacy Analysis</h1>
+<p>Support:</p>
+<ul>
+<li>Chrome</li>
+<li>Edge</li>
+<li>Firefox later</li>
+</ul>
+<p>Analyze:</p>
+<ul>
+<li>cookies</li>
+<li>browser history</li>
+<li>autofill traces</li>
+<li>localStorage</li>
+<li>IndexedDB</li>
+<li>trackers</li>
+<li>ad identifiers</li>
+<li>session remnants</li>
+</ul>
+<p>Visualize:</p>
+<ul>
+<li>tracking companies</li>
+<li>tracker counts</li>
+<li>persistence levels</li>
+<li>tracking severity</li>
+</ul>
+<p>Example:
+Google → 42 trackers
+Meta → 31 trackers</p>
+<hr>
+<h1 id="4-windows-artifact-analysis">4. Windows Artifact Analysis</h1>
+<p>Critical feature category.</p>
+<p>Analyze:</p>
+<ul>
+<li>Registry</li>
+<li>Jump Lists</li>
+<li>Recent Files</li>
+<li>Thumbnail Cache</li>
+<li>ShellBags</li>
+<li>temp files</li>
+<li>OneDrive remnants</li>
+</ul>
+<p>Use findings to reconstruct behavioral traces and privacy exposure.</p>
+<hr>
+<h1 id="5-metadata-leak-detection">5. Metadata Leak Detection</h1>
+<p>Scan:</p>
+<ul>
+<li>images</li>
+<li>PDFs</li>
+<li>Office documents</li>
+<li>videos</li>
+</ul>
+<p>Detect:</p>
+<ul>
+<li>GPS coordinates</li>
+<li>device models</li>
+<li>author names</li>
+<li>software metadata</li>
+<li>timestamps</li>
+<li>usernames</li>
+</ul>
+<p>Provide:</p>
+<ul>
+<li>explanations</li>
+<li>metadata stripping options</li>
+<li>severity scoring</li>
+</ul>
+<hr>
+<h1 id="6-secret-detection-engine">6. Secret Detection Engine</h1>
+<p>Detect:</p>
+<ul>
+<li>JWTs</li>
+<li>AWS keys</li>
+<li>OAuth tokens</li>
+<li>SSH keys</li>
+<li>bearer tokens</li>
+<li>mnemonic phrases</li>
+<li>crypto wallet traces</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li>regex</li>
+<li>entropy analysis</li>
+<li>heuristics</li>
+</ul>
+<p>Each finding must include:</p>
+<ul>
+<li>severity</li>
+<li>explanation</li>
+<li>source path</li>
+<li>remediation guidance</li>
+</ul>
+<hr>
+<h1 id="7-interactive-privacy-heatmap">7. Interactive Privacy Heatmap</h1>
+<p>Visualize filesystem risk intensity.</p>
+<p>Example:
+/Downloads → Critical
+/Desktop → High
+/Documents → Medium</p>
+<p>Use:</p>
+<ul>
+<li>glowing heat layers</li>
+<li>drill-down interactions</li>
+<li>animated transitions</li>
+</ul>
+<p>The visualization should feel cinematic and investigative.</p>
+<hr>
+<h1 id="8-relationship-graph-visualization">8. Relationship Graph Visualization</h1>
+<p>Interactive graph mapping relationships between:</p>
+<ul>
+<li>applications</li>
+<li>trackers</li>
+<li>sessions</li>
+<li>cached identities</li>
+<li>stored artifacts</li>
+</ul>
+<p>Example:
+Chrome
+├── Cookies
+├── Sessions
+├── Trackers
+└── Autofill identities</p>
+<p>The graph should feel like a digital forensic investigation board.</p>
+<hr>
+<h1 id="9-timeline-reconstruction">9. Timeline Reconstruction</h1>
+<p>Reconstruct behavioral activity from system artifacts.</p>
+<p>Example:
+8:13 PM → Banking PDF opened
+8:14 PM → Screenshot created
+8:16 PM → Discord upload</p>
+<p>Sources:</p>
+<ul>
+<li>filesystem timestamps</li>
+<li>browser history</li>
+<li>Jump Lists</li>
+<li>thumbnail cache</li>
+<li>app databases</li>
+</ul>
+<p>The goal is to reveal behavioral residue.</p>
+<hr>
+<h1 id="10-cache-archaeology">10. Cache Archaeology</h1>
+<p>Identify remnants of deleted or forgotten artifacts.</p>
+<p>Examples:</p>
+<ul>
+<li>deleted image previews</li>
+<li>stale thumbnails</li>
+<li>cached media remnants</li>
+<li>abandoned temp files</li>
+</ul>
+<p>Focus on evidence visibility rather than full recovery.</p>
+<hr>
+<h1 id="11-severity-classification-system">11. Severity Classification System</h1>
+<p>Severity levels:</p>
+<ul>
+<li>Critical</li>
+<li>High</li>
+<li>Medium</li>
+<li>Low</li>
+</ul>
+<p>Examples:
+Critical:</p>
+<ul>
+<li>wallet seed phrase</li>
+<li>private SSH key</li>
+</ul>
+<p>High:</p>
+<ul>
+<li>session token</li>
+<li>OAuth credential</li>
+</ul>
+<p>Medium:</p>
+<ul>
+<li>GPS metadata</li>
+</ul>
+<p>Low:</p>
+<ul>
+<li>stale cache</li>
+</ul>
+<hr>
+<h1 id="12-offline-ai-assistant-optional">12. Offline AI Assistant (Optional)</h1>
+<p>Completely local AI assistant.</p>
+<p>Functions:</p>
+<ul>
+<li>summarize findings</li>
+<li>explain risks</li>
+<li>generate remediation recommendations</li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li>no cloud inference</li>
+<li>lightweight local models</li>
+<li>ONNX or llama.cpp support</li>
+</ul>
+<hr>
+<h1 id="13-privacy-cleanup-actions">13. Privacy Cleanup Actions</h1>
+<p>Allow users to:</p>
+<ul>
+<li>clear tracking cookies</li>
+<li>remove metadata</li>
+<li>purge caches</li>
+<li>securely delete files</li>
+</ul>
+<p>Requirements:</p>
+<ul>
+<li>confirmation prompts</li>
+<li>operation transparency</li>
+<li>safety warnings</li>
+</ul>
+<p>Never silently delete user data.</p>
+<hr>
+<h1 id="14-real-time-monitoring-mode-optional">14. Real-Time Monitoring Mode (Optional)</h1>
+<p>Monitor:</p>
+<ul>
+<li>new trackers</li>
+<li>sensitive file creation</li>
+<li>leaked credentials</li>
+<li>risky downloads</li>
+</ul>
+<p>Example:
+“New OAuth token detected in Downloads.”</p>
+<hr>
+<h1 id="15-sqlite--application-database-scanner">15. SQLite &amp; Application Database Scanner</h1>
+<p>Analyze:</p>
+<ul>
+<li>browser SQLite databases</li>
+<li>Electron application storage</li>
+<li>IndexedDB</li>
+<li>LevelDB</li>
+</ul>
+<p>Applications:</p>
+<ul>
+<li>Discord</li>
+<li>Telegram</li>
+<li>Slack</li>
+<li>VS Code</li>
+<li>Spotify</li>
+<li>Steam</li>
+</ul>
+<p>Detect:</p>
+<ul>
+<li>trackers</li>
+<li>cached identifiers</li>
+<li>deleted remnants</li>
+<li>stored sessions</li>
+</ul>
+<hr>
+<h1 id="16-recommendation-engine">16. Recommendation Engine</h1>
+<p>Generate actionable recommendations.</p>
+<p>Examples:
+“Move SSH keys out of Downloads.”
+“Clear stale browser sessions.”
+“Strip GPS metadata from exported images.”</p>
+<p>Recommendations should be:</p>
+<ul>
+<li>prioritized</li>
+<li>understandable</li>
+<li>security-aware</li>
+</ul>
+<hr>
+<h1 id="17-exportable-audit-reports">17. Exportable Audit Reports</h1>
+<p>Export:</p>
+<ul>
+<li>PDF</li>
+<li>JSON</li>
+<li>Markdown</li>
+</ul>
+<p>Include:</p>
+<ul>
+<li>findings</li>
+<li>severity</li>
+<li>screenshots</li>
+<li>timelines</li>
+<li>remediation guidance</li>
+</ul>
+<p>Reports should look forensic-grade and professional.</p>
+<hr>
+<h1 id="18-offline-integrity-banner">18. Offline Integrity Banner</h1>
+<p>Prominently display:
+✓ No internet access
+✓ No telemetry
+✓ Fully local processing</p>
+<p>This should establish trust immediately.</p>
+<hr>
+<h1 id="user-experience-design">USER EXPERIENCE DESIGN</h1>
+<h1 id="design-language">Design Language</h1>
+<p>The UI should feel:</p>
+<ul>
+<li>elegant</li>
+<li>cinematic</li>
+<li>investigative</li>
+<li>modern</li>
+<li>cyber-forensic</li>
+</ul>
+<p>Avoid:</p>
+<ul>
+<li>cliché green hacker terminals</li>
+<li>excessive neon</li>
+<li>gimmicky effects</li>
+</ul>
+<p>Preferred visual style:</p>
+<ul>
+<li>matte black</li>
+<li>charcoal gray</li>
+<li>amber highlights</li>
+<li>subtle warning reds</li>
+<li>soft animations</li>
+<li>glassmorphism accents</li>
+</ul>
+<p>Inspirations:</p>
+<ul>
+<li>modern observability dashboards</li>
+<li>forensic analysis platforms</li>
+<li>high-end DFIR tooling</li>
+</ul>
+<hr>
+<h1 id="main-interface-layout">MAIN INTERFACE LAYOUT</h1>
+<h1 id="left-sidebar">Left Sidebar</h1>
+<p>Navigation:</p>
+<ul>
+<li>Dashboard</li>
+<li>Browser Artifacts</li>
+<li>Windows Artifacts</li>
+<li>Applications</li>
+<li>Timeline</li>
+<li>Heatmap</li>
+<li>Reports</li>
+<li>Recommendations</li>
+</ul>
+<hr>
+<h1 id="main-dashboard">Main Dashboard</h1>
+<p>Display:</p>
+<ul>
+<li>Privacy Debt Score</li>
+<li>live findings</li>
+<li>scan progress</li>
+<li>tracker summaries</li>
+<li>heatmaps</li>
+<li>relationship graphs</li>
+</ul>
+<hr>
+<h1 id="right-context-panel">Right Context Panel</h1>
+<p>Show:</p>
+<ul>
+<li>artifact details</li>
+<li>metadata</li>
+<li>severity</li>
+<li>remediation guidance</li>
+<li>related applications</li>
+</ul>
+<hr>
+<h1 id="live-scanning-experience">LIVE SCANNING EXPERIENCE</h1>
+<p>The scan should feel dynamic and alive.</p>
+<p>Examples:
+Scanning browser artifacts...
+Inspecting thumbnail cache...
+Analyzing registry traces...
+Reconstructing behavioral timeline...</p>
+<p>Live findings should appear progressively.</p>
+<hr>
+<h1 id="demo-experience">DEMO EXPERIENCE</h1>
+<p>The demo should unfold like a forensic investigation.</p>
+<h1 id="demo-flow">Demo Flow</h1>
+<ol>
+<li>Launch application</li>
+<li>Display offline integrity banner</li>
+<li>Start scan</li>
+<li>Live findings appear</li>
+<li>Reveal trackers and sessions</li>
+<li>Open privacy heatmap</li>
+<li>Show timeline reconstruction</li>
+<li>Reveal deleted artifact remnants</li>
+<li>End with:</li>
+</ol>
+<p>“This audit never left your machine.”</p>
+<p>The emotional impact should be:
+“My computer remembers everything.”</p>
+<hr>
+<h1 id="performance-requirements">PERFORMANCE REQUIREMENTS</h1>
+<p>The system should:</p>
+<ul>
+<li>remain responsive during scans</li>
+<li>support concurrent scanning</li>
+<li>process large filesystems efficiently</li>
+<li>minimize RAM usage</li>
+<li>support incremental indexing</li>
+</ul>
+<p>Use:</p>
+<ul>
+<li>async Rust</li>
+<li>worker pools</li>
+<li>modular parsers</li>
+</ul>
+<hr>
+<h1 id="security-requirements">SECURITY REQUIREMENTS</h1>
+<p>The application itself must:</p>
+<ul>
+<li>never transmit user data</li>
+<li>avoid unnecessary privilege escalation</li>
+<li>securely store reports locally</li>
+<li>isolate risky parsers where possible</li>
+<li>clearly communicate all destructive actions</li>
+</ul>
+<hr>
+<h1 id="recommended-project-structure">RECOMMENDED PROJECT STRUCTURE</h1>
+<p>privacy-debt-auditor/
+├── core/
+│   ├── scanner/
+│   ├── detectors/
+│   ├── parsers/
+│   ├── entropy/
+│   ├── metadata/
+│   └── risk_engine/
+│
+├── windows/
+│   ├── registry/
+│   ├── jump_lists/
+│   ├── shellbags/
+│   ├── browser/
+│   ├── thumbnails/
+│   └── recent_files/
+│
+├── frontend/
+│   ├── dashboard/
+│   ├── timeline/
+│   ├── graph/
+│   ├── heatmap/
+│   └── reports/
+│
+└── exports/</p>
+<hr>
+<h1 id="deliverables">DELIVERABLES</h1>
+<p>Generate:</p>
+<ol>
+<li>Full system architecture</li>
+<li>Rust backend design</li>
+<li>Tauri frontend design</li>
+<li>Module breakdown</li>
+<li>Windows artifact parsing plan</li>
+<li>Data flow diagrams</li>
+<li>Database schema</li>
+<li>UI wireframes</li>
+<li>Feature implementation roadmap</li>
+<li>Risk scoring model</li>
+<li>Visualization concepts</li>
+<li>Demo script</li>
+<li>Branding direction</li>
+<li>MVP vs advanced roadmap</li>
+<li>Threat model</li>
+</ol>
+<p>The final result should feel like a believable next-generation forensic privacy platform suitable for a cybersecurity hackathon.</p>
+
+            
+            
+        </body>
+        </html>
